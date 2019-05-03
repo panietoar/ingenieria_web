@@ -1,0 +1,127 @@
+:root {
+  --color-fuente: #444;
+  --color-gris-claro: #aaa;
+  --color-gris-claro2: #ccc;
+  --color-blanco: #fff;
+  --color-azul: #0084ff;
+  --color-azul2: #005aad;
+  --tamano-fuente: 1.4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: var(--tamano-fuente);
+}
+
+.main {
+  display: flex;
+}
+
+.menu {
+  box-shadow: 3px 0 10px 6px rgba(0, 0, 0, 0.4);
+  flex-basis: 15%;
+  height: 100vh;
+}
+
+.menu__lista-item {
+  border-bottom: 1px solid var(--color-fuente);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.menu__lista-item--activo {
+  background-color: var(--color-azul2);
+  transform: scaleY(1.3);
+}
+
+.menu__lista-item:hover {
+  background-color: var(--color-azul);
+}
+
+.menu__lista-item--activo .menu__link {
+  color: var(--color-blanco);
+  transform: scaleX(1.3);
+  margin-left: 2.3rem;
+}
+
+.menu__link {
+  color: var(--color-fuente);
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  padding: 14px;
+}
+
+.menu__link:hover {
+  color: var(--color-gris-claro2);
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 3rem;
+  width: 100%;
+}
+
+.encabezado {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  position: relative;
+  width: 100%;
+}
+
+.encabezado__titulo {
+  font-size: 4rem;
+}
+
+.encabezado__usuario {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+}
+
+.encabezado__nombre-usuario {
+  margin-right: 1rem;
+}
+
+.tabla-datos {
+  margin-top: 10rem;
+  width: 75%;
+}
+
+.tabla-datos__tabla {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+
+.tabla-datos__fila-encabezado {
+  color: var(--color-blanco);
+  background-color: rgb(11, 82, 104);
+}
+
+.tabla-datos__fila-datos:nth-child(even) {
+  background-color: var(--color-gris-claro2);
+}
+
+.tabla-datos__encabezado,
+.tabla-datos__dato {
+  border: 1px solid var(--color-fuente);
+  padding: 1.5rem;
+}

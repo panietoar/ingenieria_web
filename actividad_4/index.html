@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gestion de inventario/insumos</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <section class="login">
+      <div class="login__contenedor">
+        <h3 class="login__titulo">Ingrese usuario y clave</h3>
+        <form action="inventario.html" method="GET">
+          <div class="login__campo">
+            <label for="usuario" class="login__label">Usuario</label>
+            <input
+              type="text"
+              name="usuario"
+              id="usuario"
+              class="login_input"
+            />
+          </div>
+          <div class="login__campo">
+            <label for="clave" class="login__label">Clave</label>
+            <input
+              type="password"
+              name="clave"
+              id="clave"
+              class="login_input"
+            />
+          </div>
+          <button type="submit" class="login__submit">Ingresar</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

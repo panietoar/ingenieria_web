@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gestion de inventario/insumos</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <aside class="menu">
+        <nav class="menu__navegacion">
+          <ul class="menu__lista">
+            <li class="menu__lista-item">
+              <a href="#" class="menu__link">Mi Perfil</a>
+            </li>
+            <li class="menu__lista-item">
+              <a href="./insumos.html" class="menu__link">Insumos</a>
+            </li>
+            <li class="menu__lista-item menu__lista-item--activo">
+              <a href="./inventario.html" class="menu__link">Inventario</a>
+            </li>
+            <li class="menu__lista-item">
+              <a href="#" class="menu__link">Reportes</a>
+            </li>
+            <li class="menu__lista-item">
+              <a href="./index.html" class="menu__link">Salir</a>
+            </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+  
+      <main class="contenido">
+        <header class="encabezado">
+          <h2 class="encabezado__titulo">Inventario</h2>
+          <div class="encabezado__usuario">
+            <span class="encabezado__nombre-usuario">Hola, Fulano</span>
+            <i class="encabezado__icono-usuario material-icons">
+              account_circle
+              </i>
+          </div>
+        </header>
+  
+        <section class="tabla-datos">
+          <table class="tabla-datos__tabla">
+            <thead>
+              <tr class="tabla-datos__fila-encabezado">
+                <th class="tabla-datos__encabezado">Id</th>
+                <th class="tabla-datos__encabezado">Nombre</th>
+                <th class="tabla-datos__encabezado">Existencias</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="tabla-datos__fila-datos">
+                <td class="tabla-datos__dato">1</td>
+                <td class="tabla-datos__dato">Cerveza Gaia</td>
+                <td class="tabla-datos__dato">845</td>
+              </tr>
+              <tr class="tabla-datos__fila-datos">
+                <td class="tabla-datos__dato">4</td>
+                <td class="tabla-datos__dato">Cerveza Bosque</td>
+                <td class="tabla-datos__dato">340</td>
+              </tr>
+              <tr class="tabla-datos__fila-datos">
+                <td class="tabla-datos__dato">7</td>
+                <td class="tabla-datos__dato">Cerveza Cienaga</td>
+                <td class="tabla-datos__dato">668</td>
+              </tr>
+              <tr class="tabla-datos__fila-datos">
+                <td class="tabla-datos__dato">10</td>
+                <td class="tabla-datos__dato">Cerveza Nevado</td>
+                <td class="tabla-datos__dato">1289</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
